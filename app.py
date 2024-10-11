@@ -9,7 +9,7 @@ import seaborn as sns
 st.title("Melbourne House Price Prediction App")
 
 #Load the saved model
-model = joblib.load('C:/Users/User/Documents/My Project/Kaggle Learn/Melbourne Housing/best_model_rf.pkl')
+model = joblib.load('best_model_rf.pkl')
 
 # Define the function for prediction
 def predict_price(rooms, bathroom, landsize, latitude, longitude, include_garage, distance_to_city):

@@ -8,6 +8,8 @@ import seaborn as sns
 # Title of the app
 st.title("Melbourne House Price Prediction App")
 
+st.write("This app predicts house prices in Melbourne based on features such as the number of rooms, bathrooms, land size, latitude, and longitude. The model uses a trained Random Forest Regressor to provide accurate price estimates. The app is built with Streamlit, offering an interactive interface for users to input property details and visualize correlations between different features and houses prices.")
+
 #Load the saved model
 model = joblib.load('best_model_rf.pkl')
 
